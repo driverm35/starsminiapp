@@ -1,5 +1,5 @@
 <template>
-  <button class="w-15 h-15 bg-white/20 rounded-full flex items-center justify-center">
+  <button class="w-13 h-13 bg-white/20 rounded-full flex items-center justify-center">
     {{ icon }}
   </button>
 </template>

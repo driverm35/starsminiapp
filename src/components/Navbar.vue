@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed bottom-0 left-0 w-full bg-gray-900 border-t border-gray-700 flex justify-around py-4">
+  <nav class="fixed h-20 bottom-0 left-0 w-full bg-gray-900 border-t border-gray-700 flex justify-around py-4 :md max-w-180 mx-auto">
     <router-link to="/" class="nav-item" :class="{ active: isActive('/') }">
       <img src="/icons/shopping-bag.svg" alt="Купить" class="icon" />
       <div>Купить</div>
@@ -9,10 +9,10 @@
       <div>Отзывы</div>
     </router-link>
     <router-link to="/referral" class="nav-item" :class="{ active: isActive('/referral') }">
-      <img src="/icons/message.svg" alt="Заработать" class="icon" />
+      <img src="/icons/users.svg" alt="Заработать" class="icon" />
       <div>Заработать</div>
     </router-link>
-    <router-link to="/menu" class="nav-item" :class="{ active: isActive('/menu') }">
+    <router-link to="/profile" class="nav-item" :class="{ active: isActive('/profile') }">
       <img src="/icons/user.svg" alt="Профиль" class="icon" />
       <div>Профиль</div>
     </router-link>
@@ -23,8 +23,12 @@
 import { useRoute } from "vue-router";
 const route = useRoute();
 
-const isActive = (path: string) =>
-  route.path === path || route.path.startsWith(path);
+const isActive = (path: string) => {
+  if (path === "/") {
+    return route.path === "/";
+  }
+  return route.path.startsWith(path);
+};
 </script>
 
 <style scoped>

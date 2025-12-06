@@ -1,11 +1,9 @@
 <template>
-    <div
-      class="bg-cover bg-center h-screen fixed top-0 left-0 w-full"
-      style="background-image: url('/images/bg-main.jpg')"
-    >
+  <div
+    class="bg-cover bg-center w-full h-full min-h-screen"
+    style="background-image: url('/images/bg-main.jpg')"
+  >
     <router-view />
+    <Toast />
   </div>
 </template>
-
-<script setup lang="ts">
-</script>

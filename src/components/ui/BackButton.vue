@@ -1,8 +1,11 @@
 <template>
   <button
-    class="w-10 h-10 bg-white/10 rounded-lg ml-4 mt-4 flex items-center justify-center"
+    class="w-11 h-11 bg-white/80 rounded-xl flex items-center justify-center"
     @click="$router.back()"
   >
-    ←
+  <div
+    class="icon-mask w-6 h-7 bg-black/80"
+    style="mask-image: url('/icons/left-arrow.svg'); -webkit-mask-image: url('/icons/left-arrow.svg');"
+  ></div>
   </button>
 </template>

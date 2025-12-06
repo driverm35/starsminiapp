@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+}
+
+/* Универсальная маска для SVG-иконок */
+.icon-mask {
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  display: inline-block;
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+}

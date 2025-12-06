@@ -1,11 +1,14 @@
 <template>
-  <div class="min-h-screen bg-gray-900 relative">
-    <div class="relative z-10">
+  <div class="flex flex-col min-h-screen bg-gray-900 relative :md max-w-180 mx-auto">
+
+    <!-- Прокручиваемый контент -->
+    <div class="flex flex-col grow overflow-y-auto relative z-10">
       <slot />
     </div>
-  </div>
 
-  <Navbar />
+    <!-- Нижняя навигация -->
+    <Navbar class="fixed bottom-0 left-0 right-0 h-17 z-50" />
+  </div>
 </template>
 
 <script setup lang="ts">
