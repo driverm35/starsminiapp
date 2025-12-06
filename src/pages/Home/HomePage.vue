@@ -23,7 +23,7 @@
       </button>
       <div
         class="col-span-1 flex justify-center bg-gray-800/90 rounded-full size-11 items-center"
-        @click="$router.push('/buy/self')"
+        @click="$router.push('/battle')"
       >
         <div
           class="icon-mask w-6 h-6 bg-white"
